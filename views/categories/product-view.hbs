@@ -1,0 +1,23 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4 item-photo">
+            <img style="max-width:100%;" src="{{ product.imagePath }}" />
+        </div>
+        <div class="col-xs-5" style="border:0px solid gray">
+            <!-- Datos del vendedor y titulo del producto -->
+            <h3>{{product.title}}</h3>    
+
+            <h3 style="margin-top:0px;">${{product.price}}</h3>
+            <p>
+                {{product.description}}
+            </p>
+            <div class="section" style="padding-bottom:20px;">
+
+                <h6><a href="/add-to-cart/{{ product._id }}" class="btn btn-success" role="button">Add to Shopping Cart</a></h6>
+            </div>                                        
+        </div>                              
+
+
+    </div>
+</div>
